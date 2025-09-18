@@ -1,31 +1,35 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: 'Inter', sans-serif;
+  background-color: #F1EFEC;
   text-align: center;
 }
 
 header {
   padding: 20px;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 200;
 }
 
 .top-panel {
-  background-color: #ccc;
+  background-color: #6D94C5;
   padding: 40px 20px;
+  color: #F1EFEC;
 }
 
 .top-panel h2 {
   margin: 0 0 15px;
+  font-size: 28px;
+  font-weight: 1000;
 }
 
 .search-bar {
   padding: 10px;
   width: 60%;
+  height: 20px;
   max-width: 400px;
   border: 1px solid #999;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 .buttons {
@@ -46,10 +50,10 @@ header {
 }
 
 .button-card {
-  background-color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.11), 0 4px 5px rgba(0,0,0,0.11);
+  background-color: #fafafa;
+  border-radius: 20px;
+  padding: 40px;
   text-align: center;
   transition: 0.3s;
   cursor: pointer;
@@ -61,12 +65,14 @@ header {
 
 .button-card h3 {
   margin: 0 0 10px;
-  font-size: 16px;
-  font-weight: bold;
+  font-family: 'Inter';
+  font-size: 18px;
+  font-weight: 800;
 }
 
 .button-card p {
   margin: 0;
+  font-family: 'Inter';
   font-size: 12px;
   color: #444;
   line-height: 1.4;
@@ -81,4 +87,11 @@ header {
   border: 1px solid #ddd;
   font-size: 16px;
   font-weight: bold;
+}
+
+.button-card i {
+  display: block;
+  margin: 0 auto 8px auto;
+  text-align: center;
+  font-size: 2em
 }
