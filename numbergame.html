@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Game - Check Phone Number Legitimacy | Cyberware Help</title>
+  <meta name="description" content="Verify if phone numbers calling or texting you are legitimate or potential scams. Protect yourself from fraudulent communications.">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header role="banner">
+    <h1>@cyberware</h1>
+  </header>
+
+  <main id="main-content" class="number-game-container">
+    <nav role="navigation" aria-label="Breadcrumb navigation">
+      <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+        <span>Back to Help</span>
+      </a>
+    </nav>
+
+    <header class="page-header">
+      <div class="page-icon" role="img" aria-label="Number verification icon">
+        <i class="fas fa-list-ol" aria-hidden="true"></i>
+      </div>
+      <h1>Number Game</h1>
+      <p class="page-description">Check if the cellphone number texting or calling you is legit! Protect yourself from scam calls and fraudulent messages.</p>
+    </header>
+
+    <section class="phone-verification" role="main" aria-labelledby="verification-heading">
+      <header>
+        <h2 id="verification-heading">Phone Number Verification</h2>
+      </header>
+      
+      <form class="verification-form" role="form" novalidate>
+        <fieldset>
+          <legend class="visually-hidden">Enter phone number for verification</legend>
+          
+          <div class="input-group">
+            <label for="phone-input" class="input-label">
+              Enter the number that called or texted you:
+            </label>
+            <input 
+              type="tel" 
+              id="phone-input" 
+              name="phone-number"
+              class="phone-input" 
+              placeholder="e.g., +1-555-123-4567 or 09171234567"
+              maxlength="20"
+              aria-describedby="phone-help phone-error"
+              required
+              autocomplete="tel"
+            >
+            <div id="phone-help" class="input-help">
+              Enter the complete phone number including country code if available
+            </div>
+            <div id="phone-error" class="error-message" role="alert" aria-live="polite"></div>
+          </div>
+
+          <button type="submit" class="verify-btn" aria-describedby="verify-help">
+            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+            <span>Check Number Legitimacy</span>
+          </button>
+          <div id="verify-help" class="button-help">
+            Analyze the phone number for potential security risks and scam indicators
+          </div>
+        </fieldset>
+      </form>
+
+      <section id="verification-results" class="results-section" role="region" aria-labelledby="results-heading" aria-live="polite">
+        <header>
+          <h3 id="results-heading" class="visually-hidden">Verification Results</h3>
+        </header>
+        <article class="result-card" id="result-display" style="display: none;">
+          <header class="result-header">
+            <div class="result-icon" role="img">
+              <i id="result-icon" aria-hidden="true"></i>
+            </div>
+            <h4 id="result-title" class="result-title"></h4>
+          </header>
+          <div class="result-content">
+            <p id="result-description" class="result-description"></p>
+            <div id="result-details" class="result-details"></div>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <section class="warning-signs" role="complementary" aria-labelledby="warning-heading">
+      <header>
+        <h2 id="warning-heading">
+          <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+          Common Scam Warning Signs
+        </h2>
+      </header>
+      
+      <div class="warning-grid" role="list">
+        <article class="warning-card" role="listitem">
+          <header>
+            <h3>
+              <i class="fas fa-clock" aria-hidden="true"></i>
+              Urgent Demands
+            </h3>
+          </header>
+          <div class="warning-content">
+            <p><strong>Red Flag:</strong> "Act now or your account will be closed!"</p>
+            <p>Legitimate organizations don't create false urgency. Take time to verify.</p>
+          </div>
+        </article>
+
+        <article class="warning-card" role="listitem">
+          <header>
+            <h3>
+              <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+              Money Requests
+            </h3>
+          </header>
+          <div class="warning-content">
+            <p><strong>Red Flag:</strong> "Send money immediately to avoid consequences."</p>
+            <p>Real companies don't demand instant payments via gift cards or wire transfers.</p>
+          </div>
+        </article>
+
+        <article class="warning-card" role="listitem">
+          <header>
+            <h3>
+              <i class="fas fa-user-secret" aria-hidden="true"></i>
+              Personal Info Requests
+            </h3>
+          </header>
+          <div class="warning-content">
+            <p><strong>Red Flag:</strong> "Verify your Social Security number for security."</p>
+            <p>Legitimate organizations already have your information and won't ask via unsolicited calls.</p>
+          </div>
+        </article>
+
+        <article class="warning-card" role="listitem">
+          <header>
+            <h3>
+              <i class="fas fa-gift" aria-hidden="true"></i>
+              Too Good to be True
+            </h3>
+          </header>
+          <div class="warning-content">
+            <p><strong>Red Flag:</strong> "You've won $10,000! Just pay processing fees."</p>
+            <p>Legitimate prizes don't require upfront payments or fees.</p>
+          </div>
+        </article>
+
+        <article class="warning-card" role="listitem">
+          <header>
+            <h3>
+              <i class="fas fa-phone-slash" aria-hidden="true"></i>
+              Caller ID Spoofing
+            </h3>
+          </header>
+          <div class="warning-content">
+            <p><strong>Red Flag:</strong> Number looks local but caller claims to be from a bank.</p>
+            <p>Scammers can fake caller ID. Always verify independently.</p>
+          </div>
+        </article>
+
+        <article class="warning-card" role="listitem">
+          <header>
+            <h3>
+              <i class="fas fa-robot" aria-hidden="true"></i>
+              Robocalls
+            </h3>
+          </header>
+          <div class="warning-content">
+            <p><strong>Red Flag:</strong> Automated message about your car warranty or legal troubles.</p>
+            <p>Hang up immediately. Legitimate businesses use human representatives.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="protection-tips" role="complementary" aria-labelledby="protection-heading">
+      <header>
+        <h2 id="protection-heading">
+          <i class="fas fa-shield-alt" aria-hidden="true"></i>
+          How to Protect Yourself
+        </h2>
+      </header>
+      
+      <div class="tips-grid" role="list">
+        <article class="tip-item" role="listitem">
+          <header>
+            <h3>
+              <i class="fas fa-phone-slash" aria-hidden="true"></i>
+              Don't Answer Unknown Numbers
+            </h3>
+          </header>
+          <div class="tip-content">
+            <p>Let unknown calls go to voicemail. Legitimate callers will leave a message.</p>
+          </div>
+        </article>
+
+        <article class="tip-item" role="listitem">
+          <header>
+            <h3>
+              <i class="fas fa-search" aria-hidden="true"></i>
+              Verify Independently
+            </h3>
+          </header>
+          <div class="tip-content">
+            <p>Look up the organization's official number and call them back directly.</p>
+          </div>
+        </article>
+
+        <article class="tip-item" role="listitem">
+          <header>
+            <h3>
+              <i class="fas fa-ban" aria-hidden="true"></i>
+              Block Suspicious Numbers
+            </h3>
+          </header>
+          <div class="tip-content">
+            <p>Use your phone's blocking feature and report spam numbers to your carrier.</p>
+          </div>
+        </article>
+
+        <article class="tip-item" role="listitem">
+          <header>
+            <h3>
+              <i class="fas fa-users" aria-hidden="true"></i>
+              Ask Family & Friends
+            </h3>
+          </header>
+          <div class="tip-content">
+            <p>Consult trusted people before sharing information or sending money.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bottom-panel" role="contentinfo">
+    <p>Still can't find what you're looking for? <a href="contact.html">Contact Us!</a></p>
+  </footer>
+
+  <script>
+    // Phone number validation patterns
+    const SCAM_PATTERNS = {
+      // Premium rate numbers (expensive to call)
+      premium: /^(\+?1[-.\s]?)?(900|976|809|829|849|869)/,
+      // Obvious fake patterns
+      fake: /^(\+?1[-.\s]?)?555[-.\s]?0[0-9]{3}|^(\+?63[-.\s]?)?0000[-.\s]?[0-9]{6}/,
+      // Too many repeated digits
+      repeated: /(\d)\1{6,}/,
+      // Emergency-like numbers
+      emergency: /^(\+?1[-.\s]?)?[2-9]11$/
+    };
+
+    const KNOWN_SCAM_NUMBERS = [
+      '18002738255', '18003569377', '18556401903',
+      '19176425656', '18559961244', '18332582274',
+      '09000000000', '09111111111', '09999999999',
+      '02000000000', '02111111111'
+    ];
+
+    const COMMON_SCAM_PREFIXES = [
+      '1900', '1976', '1809', '1829', '1849', '1869', // Premium US
+      '63900', '639000', // Premium Philippines
+      '0900', '09000' // Premium local
+    ];
+
+    class PhoneVerifier {
+      constructor() {
+        this.form = document.querySelector('.verification-form');
+        this.phoneInput = document.getElementById('phone-input');
+        this.errorDiv = document.getElementById('phone-error');
+        this.resultSection = document.getElementById('result-display');
+        this.resultIcon = document.getElementById('result-icon');
+        this.resultTitle = document.getElementById('result-title');
+        this.resultDescription = document.getElementById('result-description');
+        this.resultDetails = document.getElementById('result-details');
+
+        this.initEventListeners();
+      }
+
+      initEventListeners() {
+        this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+        this.phoneInput.addEventListener('input', () => this.clearError());
+        this.phoneInput.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            this.form.dispatchEvent(new Event('submit'));
+          }
+        });
+      }
+
+      handleSubmit(e) {
+        e.preventDefault();
+        const phoneNumber = this.phoneInput.value.trim();
+        
+        if (!this.validateInput(phoneNumber)) {
+          return;
+        }
+
+        this.verifyPhoneNumber(phoneNumber);
+      }
+
+      validateInput(phoneNumber) {
+        if (!phoneNumber) {
+          this.showError('Please enter a phone number to check.');
+          this.phoneInput.focus();
+          return false;
+        }
+
+        if (phoneNumber.length < 7) {
+          this.showError('Please enter a complete phone number.');
+          return false;
+        }
+
+        return true;
+      }
+
+      verifyPhoneNumber(phoneNumber) {
+        const normalizedNumber = this.normalizePhoneNumber(phoneNumber);
+        const analysis = this.analyzeNumber(phoneNumber, normalizedNumber);
+        
+        this.displayResults(analysis);
+        this.logAnalysis(phoneNumber, analysis);
+      }
+
+      normalizePhoneNumber(phone) {
+        return phone.replace(/[\s\-\(\)\+\.]/g, '');
+      }
+
+      analyzeNumber(originalNumber, normalizedNumber) {
+        // Check against known scam numbers
+        if (KNOWN_SCAM_NUMBERS.includes(normalizedNumber)) {
+          return {
+            risk: 'high',
+            category: 'Known Scam Number',
+            message: 'This number is in our database of confirmed scam numbers.',
+            recommendations: [
+              'Block this number immediately',
+              'Do not answer calls from this number',
+              'Report to your phone carrier',
+              'Warn friends and family about this number'
+            ]
+          };
+        }
+
+        // Check for premium rate patterns
+        if (SCAM_PATTERNS.premium.test(originalNumber)) {
+          return {
+            risk: 'high',
+            category: 'Premium Rate Number',
+            message: 'This appears to be a premium rate number that charges high fees.',
+            recommendations: [
+              'Never call this number back',
+              'Block to prevent future calls',
+              'These numbers can charge $2-20 per minute',
+              'Report as potential fraud'
+            ]
+          };
+        }
+
+        // Check for fake patterns
+        if (SCAM_PATTERNS.fake.test(originalNumber)) {
+          return {
+            risk: 'high',
+            category: 'Invalid Number Format',
+            message: 'This number format is commonly used by scammers.',
+            recommendations: [
+              'This is likely a spoofed or fake number',
+              'Block and ignore all communications',
+              'Real businesses use legitimate number formats'
+            ]
+          };
+        }
+
+        // Check for repeated digits
+        if (SCAM_PATTERNS.repeated.test(normalizedNumber)) {
+          return {
+            risk: 'medium',
+            category: 'Suspicious Pattern',
+            message: 'This number has an unusual pattern of repeated digits.',
+            recommendations: [
+              'Verify caller identity before sharing information',
+              'Be cautious of any requests for money or personal data',
+              'Consider blocking if calls are unwanted'
+            ]
+          };
+        }
+
+        // Check common scam prefixes
+        for (let prefix of COMMON_SCAM_PREFIXES) {
+          if (normalizedNumber.startsWith(prefix)) {
+            return {
+              risk: 'medium',
+              category: 'Suspicious Prefix',
+              message: 'This number prefix is often associated with scam calls.',
+              recommendations: [
+                'Exercise caution when answering',
+                'Do not provide personal information',
+                'Verify caller identity independently'
+              ]
+            };
+          }
+        }
+
+        // Basic format validation
+        if (normalizedNumber.length < 7 || normalizedNumber.length > 15) {
+          return {
+            risk: 'medium',
+            category: 'Invalid Format',
+            message: 'This number format is not standard for legitimate phone numbers.',
+            recommendations: [
+              'Valid phone numbers are typically 7-15 digits',
+              'Be suspicious of unusual formats',
+              'Verify through official channels'
+            ]
+          };
+        }
+
+        // If no red flags found
+        return {
+          risk: 'low',
+          category: 'Appears Legitimate',
+          message: 'This number doesn\'t match known scam patterns in our database.',
+          recommendations: [
+            'Still verify caller identity for unsolicited calls',
+            'Never share personal information unless you initiated the call',
+            'Trust your instincts if something feels wrong'
+          ]
+        };
+      }
+
+      displayResults(analysis) {
+        // Set risk level styling
+        this.resultSection.className = 'result-card show';
+        this.resultSection.classList.add(`risk-${analysis.risk}`);
+
+        // Set icon based on risk level
+        const icons = {
+          high: 'fas fa-exclamation-triangle',
+          medium: 'fas fa-exclamation-circle',
+          low: 'fas fa-check-circle'
+        };
+        this.resultIcon.className = icons[analysis.risk];
+
+        // Set content
+        this.resultTitle.textContent = analysis.category;
+        this.resultDescription.textContent = analysis.message;
+
+        // Build recommendations list
+        const recommendationsList = document.createElement('ul');
+        recommendationsList.className = 'recommendations-list';
+        recommendationsList.setAttribute('role', 'list');
+
+        analysis.recommendations.forEach(rec => {
+          const listItem = document.createElement('li');
+          listItem.textContent = rec;
+          listItem.setAttribute('role', 'listitem');
+          recommendationsList.appendChild(listItem);
+        });
+
+        this.resultDetails.innerHTML = '<h5>Recommendations:</h5>';
+        this.resultDetails.appendChild(recommendationsList);
+
+        // Show results with smooth scroll
+        this.resultSection.style.display = 'block';
+        this.resultSection.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'nearest' 
+        });
+
+        // Announce to screen readers
+        this.resultSection.setAttribute('aria-label', 
+          `Verification complete: ${analysis.category}. ${analysis.message}`);
+      }
+
+      showError(message) {
+        this.errorDiv.textContent = message;
+        this.errorDiv.style.display = 'block';
+        this.phoneInput.setAttribute('aria-invalid', 'true');
+        this.phoneInput.focus();
+      }
+
+      clearError() {
+        this.errorDiv.style.display = 'none';
+        this.phoneInput.removeAttribute('aria-invalid');
+      }
+
+      logAnalysis(phoneNumber, analysis) {
+        // Log for potential database updates (in production)
+        console.log('Phone verification:', {
+          number: phoneNumber.replace(/\d(?=\d{4})/g, '*'), // Mask for privacy
+          risk: analysis.risk,
+          category: analysis.category,
+          timestamp: new Date().toISOString()
+        });
+      }
+    }
+
+    // Initialize the phone verifier when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      new PhoneVerifier();
+    });
+
+    // Add input formatting for better user experience
+    document.getElementById('phone-input').addEventListener('input', function(e) {
+      let value = e.target.value.replace(/\D/g, '');
+      let formattedValue = value;
+
+      // Auto-format common patterns
+      if (value.startsWith('63') && value.length > 2) {
+        // Philippine international format
+        formattedValue = '+63 ' + value.substring(2);
+      } else if (value.startsWith('09') && value.length >= 4) {
+        // Philippine mobile format
+        formattedValue = value.replace(/(\d{4})(\d{3})(\d{4})/, '$1-$2-$3');
+      } else if (value.startsWith('1') && value.length > 1) {
+        // US international format
+        formattedValue = '+1 ' + value.substring(1);
+      } else if (value.length >= 10) {
+        // General formatting for 10+ digit numbers
+        formattedValue = value.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+      }
+
+      e.target.value = formattedValue;
+    });
+  </script>
+</body>
+</html>
