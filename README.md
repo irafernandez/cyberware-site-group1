@@ -33,7 +33,7 @@ Improvements:
 ## 📂 Project Resources
 
 - [Project Requirements Document](https://docs.google.com/document/d/1b5YzSub_7prcHJglPcaWfGlTA-dnl21rVAI7yqoyYZI/edit?tab=t.0#heading=h.c5rb2h1vy80b)
-- [Requirements Docs PDF Version:](https://drive.google.com/file/d/1v1sGwbtQFZ1HkLcqd600LZnJURkiINWh/view?usp=drive_link)
+- [Requirements Docs PDF Version](https://drive.google.com/file/d/1v1sGwbtQFZ1HkLcqd600LZnJURkiINWh/view?usp=drive_link)
 - [Project Wireframe](https://app.moqups.com/l6F9mHaOxIySCm5dO2sxKgt2JHFgCfaM/view/page/aa4c7dde7)  
 - [Updated Project Plan](https://docs.google.com/spreadsheets/d/1qsOMo-69kGqXebhjhPJhy-dsE7AL5YhDMsydsLwKsy8/edit?gid=2069078818#gid=2069078818)  
 - [GitHub Pages – Live Site](https://github.com/irafernandez/cyberware-site-group1.git)  
