@@ -30,6 +30,15 @@ Improvements:
 
 ---
 
+## 📂 Project Resources
+
+- [Project Requirements Document](#)  
+- [Project Wireframe](#)  
+- [Updated Project Plan](#)  
+- [GitHub Pages – Live Site](#)  
+
+---
+
 ## 💻 How to Use
 
 1. **Clone the repository**  
