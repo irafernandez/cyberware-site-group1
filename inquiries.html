@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Inquiry | Cyberware Help</title>
+  <meta name="description" content="Submit your questions or report issues to Cyberware Help. Get quick assistance for your cybersecurity concerns.">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <h1>@cyberware</h1>
+  </header>
+
+  <main id="main-content" class="inquiry-container">
+    <nav role="navigation" aria-label="Breadcrumb navigation">
+      <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+        <span>Back to Home</span>
+      </a>
+    </nav>
+
+    <header class="page-header">
+      <div class="page-icon" role="img" aria-label="Inquiry form icon">
+        <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+      </div>
+      <h2>Submit a New Inquiry</h2>
+      <p class="page-description">Got a question or issue? Fill out the form below and our team will get back to you as soon as possible.</p>
+    </header>
+
+    <section class="inquiry-form-section" role="form" aria-labelledby="inquiry-heading">
+      <h3 id="inquiry-heading" class="visually-hidden">Inquiry Form</h3>
+      
+      <form class="inquiry-form" novalidate>
+        <fieldset>
+          <legend class="visually-hidden">Enter your inquiry details</legend>
+
+          <!-- Name -->
+          <div class="input-group">
+            <label for="name-input" class="input-label">Your Name</label>
+            <input type="text" id="name-input" name="name" placeholder="John Doe" required aria-required="true" autocomplete="name">
+          </div>
+
+          <!-- Email -->
+          <div class="input-group">
+            <label for="email-input" class="input-label">Email Address</label>
+            <input type="email" id="email-input" name="email" placeholder="you@example.com" required aria-required="true" autocomplete="email">
+          </div>
+
+          <!-- Subject -->
+          <div class="input-group">
+            <label for="subject-input" class="input-label">Subject</label>
+            <input type="text" id="subject-input" name="subject" placeholder="Brief subject line" required aria-required="true">
+          </div>
+
+          <!-- Category -->
+          <div class="input-group">
+            <label for="category-select" class="input-label">Category</label>
+            <select id="category-select" name="category">
+              <option value="" disabled selected>Select a category</option>
+              <option value="scam-report">Scam Report</option>
+              <option value="account-security">Account Security</option>
+              <option value="general-help">General Help</option>
+              <option value="technical-issue">Technical Issue</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="input-group">
+            <label for="message-input" class="input-label">Your Message</label>
+            <textarea id="message-input" name="message" rows="6" placeholder="Describe your issue or question..." required aria-required="true"></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+            <span>Send Inquiry</span>
+          </button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bottom-panel" role="contentinfo">
+    <p>Still need help? <a href="contact.html">Contact Us!</a></p>
+  </footer>
+</body>
+</html>

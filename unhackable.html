@@ -2,22 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Be Unhackable</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be Unhackable | Cyberware Help</title>
+  <meta name="description" content="Learn how to protect yourself online with cybersecurity tips and tools.">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <main class="unhackable-content">
-    <div class="placeholder-box">
-      <i class="fa-solid fa-shield-halved floating-icon"></i>
-      <h3>Be Unhackable</h3>
-      <p>This page is under construction. Soon you’ll see tips and tools to help you stay safe online.</p>
-      <div class="loading-bar"><span></span></div>
-      <br>
-      <a href="index.html" class="back-btn">← Back</a>
-    </div>
+  <header role="banner">
+    <h1>@cyberware</h1>
+  </header>
+
+  <main id="main-content" class="unhackable-content">
+    <section class="placeholder-box" role="region" aria-labelledby="unhackable-heading">
+      <i class="fa-solid fa-shield-halved floating-icon" aria-hidden="true"></i>
+      <h2 id="unhackable-heading">Be Unhackable</h2>
+      <p>Learn how to strengthen your digital security with these proven practices. Stay one step ahead of hackers and protect your identity, data, and devices.</p>
+
+      <!-- Security Tips -->
+      <div class="tips-section">
+        <h3><i class="fa-solid fa-lightbulb"></i> Quick Security Tips</h3>
+        <ul class="best-practices">
+          <li>Use a password manager to generate and store strong, unique passwords.</li>
+          <li>Enable two-factor authentication (2FA) on all important accounts.</li>
+          <li>Keep your operating system, browser, and apps updated.</li>
+          <li>Avoid public Wi-Fi for sensitive transactions unless using a VPN.</li>
+          <li>Be cautious of phishing emails and links—always double-check senders.</li>
+        </ul>
+      </div>
+
+      <!-- Common Threats -->
+      <div class="threats-section">
+        <h3><i class="fa-solid fa-triangle-exclamation"></i> Common Threats</h3>
+        <ul class="threat-list">
+          <li><i class="fa-solid fa-bug"></i> Malware and ransomware attacks</li>
+          <li><i class="fa-solid fa-envelope-open-text"></i> Phishing and scam emails</li>
+          <li><i class="fa-solid fa-user-secret"></i> Identity theft from weak credentials</li>
+          <li><i class="fa-solid fa-wifi"></i> Unsecured Wi-Fi connections</li>
+        </ul>
+      </div>
+
+      <!-- Helpful Resources -->
+      <div class="resources-section">
+        <h3><i class="fa-solid fa-book-open"></i> Helpful Resources</h3>
+        <ul class="resource-links">
+          <li><a href="https://haveibeenpwned.com/" target="_blank" rel="noopener">Check if your email is breached</a></li>
+          <li><a href="https://www.cyber.gov.au/acsc/view-all-content/publications" target="_blank" rel="noopener">Cybersecurity guides</a></li>
+          <li><a href="https://www.eff.org/pages/tools" target="_blank" rel="noopener">Recommended security tools</a></li>
+        </ul>
+      </div>
+
+
+      <nav>
+        <a href="index.html" class="back-btn">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to Home
+        </a>
+      </nav>
+    </section>
   </main>
 
+  <footer class="bottom-panel" role="contentinfo">
+    <p>Need more help? <a href="contact.html">Contact Us!</a></p>
+  </footer>
 </body>
 </html>

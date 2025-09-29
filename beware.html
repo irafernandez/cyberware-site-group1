@@ -2,36 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beware, Be Aware! - Cyberware</title>
-  <link rel="stylesheet" href="style.css">
 
-  <!-- Google Fonts - Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" 
+    rel="stylesheet">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
   <header>
     <h1>@cyberware</h1>
   </header>
 
   <main class="beware-container">
-    <section class="beware-header">
-        <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
-      <i class="fa-regular fa-window-maximize beware-icon"></i>
-      <h2>Beware, Be Aware!</h2>
-      <p>Stay alert against cybersecurity threats. Content coming soon.</p>
+    <!-- Page Header -->
+    <section class="beware-header" aria-labelledby="beware-heading">
+      <a href="index.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to Home
+      </a>
+
+      <i class="fa-regular fa-window-maximize beware-icon" aria-hidden="true"></i>
+      <h2 id="beware-heading">Beware, Be Aware!</h2>
+      <p>Stay alert against cybersecurity threats. Learn how to protect yourself online.</p>
     </section>
 
+    <!-- Awareness Content -->
     <section class="beware-content">
       <div class="placeholder-box">
-        <i class="fa-solid fa-hourglass-half"></i>
-        <h3>Under Construction</h3>
-        <p>This section is still being built. Please check back later for updates.</p>
+        <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+        <h3>Common Threats to Watch Out For</h3>
+        <ul class="threat-list">
+          <li><i class="fa-solid fa-envelope-circle-check"></i> <strong>Phishing Emails:</strong> Don’t click suspicious links or attachments.</li>
+          <li><i class="fa-solid fa-user-lock"></i> <strong>Weak Passwords:</strong> Always use strong, unique passwords and update them regularly.</li>
+          <li><i class="fa-solid fa-wifi"></i> <strong>Public Wi-Fi Risks:</strong> Avoid logging into sensitive accounts on public networks.</li>
+          <li><i class="fa-solid fa-bug"></i> <strong>Malware & Viruses:</strong> Keep your software updated and use trusted antivirus tools.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Best Practices -->
+    <section class="beware-content">
+      <div class="placeholder-box">
+        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+        <h3>Best Practices</h3>
+        <p>Follow these simple steps to strengthen your online safety:</p>
+        <ol class="best-practices">
+          <li>Enable <strong>Two-Factor Authentication (2FA)</strong> on all important accounts.</li>
+          <li>Keep your devices and apps <strong>up-to-date</strong> with the latest security patches.</li>
+          <li>Back up important files regularly to a secure location.</li>
+          <li>Think before you click — verify sources before opening links or attachments.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="beware-content">
+      <div class="placeholder-box">
+        <i class="fa-solid fa-book-open-reader" aria-hidden="true"></i>
+        <h3>Helpful Resources</h3>
+        <p>Learn more from trusted cybersecurity sites:</p>
+        <ul class="resource-links">
+          <li><a href="https://staysafeonline.org" target="_blank">Stay Safe Online</a></li>
+          <li><a href="https://www.cisa.gov/topics/cybersecurity-best-practices" target="_blank">CISA Best Practices</a></li>
+          <li><a href="https://www.consumer.ftc.gov/topics/online-security" target="_blank">FTC: Online Security</a></li>
+        </ul>
       </div>
     </section>
   </main>
@@ -39,5 +83,6 @@
   <footer class="bottom-panel">
     <p>Need more help? <a href="contact.html">Contact Us!</a></p>
   </footer>
+
 </body>
 </html>

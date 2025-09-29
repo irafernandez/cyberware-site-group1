@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cyberware Help</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" 
+    rel="stylesheet">
+
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+
   <link rel="stylesheet" href="style.css">
-
-  <!-- Google Fonts - Inter -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head> 
-
-
+</head>
 <body>
 
   <header>
-    <h1>
-      @cyberware
-    </h1>
+    <h1>@cyberware</h1>
   </header>
-<main>
-<section class="top-panel" role="search">
-  <h2>How can we help you?</h2>
-  <label for="search" class="visually-hidden">Search Help Topics</label>
-  <input type="text" id="search" class="search-bar" placeholder="Search..." aria-label="Search Help Topics">
-</section>
 
-<section class="buttons" aria-label="Help Topics">
+  <main>
 
-  <a href="myaccount.html" class="button-card">
-    <i class="fa-regular fa-user"></i>
-    <h3>My Account</h3>
-    <p>Manage your account effectively. Learn how to personalize settings and update your information.</p>
-  </a>
+    <section class="top-panel" role="search">
+      <h2>How can we help you?</h2>
+      <label for="search" class="visually-hidden">Search Help Topics</label>
+      <input 
+        type="search" 
+        id="search" 
+        class="search-bar" 
+        placeholder="Search..." 
+        aria-label="Search Help Topics">
+    </section>
 
-  <a href="beware.html" class="button-card">
-    <i class="fa-regular fa-window-maximize"></i>
-    <h3>Beware, Be Aware!</h3>
-    <p>Be informed of every cybersecurity threat and how you can prevent from falling for it.</p>
-  </a>
+    <!-- Help Topics -->
+    <section class="buttons" aria-label="Help Topics">
+      
+      <a href="myaccount.html" class="button-card">
+        <i class="fa-regular fa-user"></i>
+        <h3>My Account</h3>
+        <p>Manage your account effectively. Learn how to personalize settings and update your information.</p>
+      </a>
 
-  <a href="unhackable.html" class="button-card">
-    <i class="fa-solid fa-fingerprint"></i>
-    <h3>Be Unhackable</h3>
-    <p>How you can prevent from being hacked.</p>
-  </a>
+      <a href="beware.html" class="button-card">
+        <i class="fa-regular fa-window-maximize"></i>
+        <h3>Beware, Be Aware!</h3>
+        <p>Be informed of every cybersecurity threat and how you can prevent falling for it.</p>
+      </a>
 
-  <a href="community.html" class="button-card">
-    <i class="fa-solid fa-users"></i>
-    <h3>Join our Community</h3>
-    <p>Discover exclusive benefits and privileges when you are a member of our community.</p>
-  </a>
+      <a href="unhackable.html" class="button-card">
+        <i class="fa-solid fa-fingerprint"></i>
+        <h3>Be Unhackable</h3>
+        <p>Learn how you can prevent being hacked.</p>
+      </a>
 
-  <article class="button-card">
-    <i class="fa-solid fa-newspaper"></i>
-    <h3>Cybernews</h3>
-    <p>Recent hacking news worldwide.</p>
-    </article>
+      <a href="community.html" class="button-card">
+        <i class="fa-solid fa-users"></i>
+        <h3>Join our Community</h3>
+        <p>Discover exclusive benefits and privileges when you are a member of our community.</p>
+      </a>
 
-    <a href="numbergame.html" class="button-card">
-      <i class="fa-solid fa-list-ol"></i>
-      <h3>Number Game</h3>
-      <p>Check if the cellphone number texting or calling you is legit!</p>
-    </a>
+      <a href="cybernews.html" class="button-card">
+        <i class="fa-solid fa-newspaper"></i>
+        <h3>Cybernews</h3>
+        <p>Read the latest global hacking news.</p>
+      </a>
 
-    <article class="button-card">
-      <i class="fa-solid fa-paper-plane"></i>
-      <h3>Press Inquires</h3>
-      <p>Acess media resources andd contact informatiom. Read about out latest news and collaboration offers.</p>
-    </article>
+      <a href="numbergame.html" class="button-card">
+        <i class="fa-solid fa-list-ol"></i>
+        <h3>Number Game</h3>
+        <p>Check if the cellphone number texting or calling you is legit!</p>
+      </a>
 
-    <article class="button-card">
-      <i class="fa-solid fa-mobile-screen-button"></i>
-      <h3>Mobile App</h3>
-      <p>Learn how to download and use our app for seamless browsing and exclusive personlized offers.</p>
-    </article>
-</section>
-</main>
-<footer class="bottom-panel">
-  <p>Still can't find what you're looking for? <a href="contact.html">Contact Us!</a></p>
+      <a href="inquiries.html" class="button-card">
+        <i class="fa-solid fa-paper-plane"></i>
+        <h3>Press Inquiries</h3>
+        <p>Access media resources and contact information. Read about our latest news and collaboration offers.</p>
+      </a>
+
+      <a href="mobileapp.html" class="button-card">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <h3>Mobile App</h3>
+        <p>Learn how to download and use our app for seamless browsing and personalized offers.</p>
+      </a>
+
+    </section>
+  </main>
+
+  <footer class="bottom-panel">
+    <p>
+      Still can't find what you're looking for? 
+      <a href="contact.html">Contact Us!</a>
+    </p>
   </footer>
+
 </body>
 </html>

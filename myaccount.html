@@ -2,52 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Account - Cyberware</title>
-  <link rel="stylesheet" href="style.css">
 
-  <!-- Google Fonts - Inter -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
   <header>
     <h1>@cyberware</h1>
   </header>
 
   <main class="account-container">
-    <section class="account-header">
-        <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    <!-- Account Header -->
+    <section class="account-header" aria-labelledby="account-heading">
+      <a href="index.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back to Home
+      </a>
+
       <i class="fa-regular fa-user account-icon"></i>
-      <h2>My Account</h2>
+      <h2 id="account-heading">My Account</h2>
       <p>Manage your profile, update details, and secure your account.</p>
     </section>
 
-    <section class="account-info">
+    <!-- Account Info -->
+    <section class="account-info" aria-label="Account Management Options">
+      <!-- Profile -->
       <div class="account-card">
         <h3><i class="fa-solid fa-id-badge"></i> Profile Information</h3>
         <p><strong>Name:</strong> Roberto Pablo Jr.</p>
         <p><strong>Email:</strong> lr.rpablo@mmdc.mcl.edu.ph</p>
         <p><strong>Phone:</strong> +63 123 456 7890</p>
-        <button class="btn">Edit Profile</button>
+        <a href="#profileModal" class="btn">Edit Profile</a>
       </div>
 
+      <!-- Security -->
       <div class="account-card">
         <h3><i class="fa-solid fa-shield-halved"></i> Security</h3>
         <p>Update your password and enable extra security measures.</p>
-        <button class="btn">Change Password</button>
-        <button class="btn">Enable 2FA</button>
+        <a href="#passwordModal" class="btn">Change Password</a>
+        <a href="#twoFAModal" class="btn">Enable 2FA</a>
       </div>
 
+      <!-- Settings -->
       <div class="account-card">
         <h3><i class="fa-solid fa-gear"></i> Settings</h3>
         <p>Personalize your Cyberware experience.</p>
-        <button class="btn">Notification Settings</button>
-        <button class="btn">Privacy Settings</button>
+        <a href="#notificationsModal" class="btn">Notification Settings</a>
+        <a href="#privacyModal" class="btn">Privacy Settings</a>
       </div>
     </section>
   </main>
@@ -55,5 +64,80 @@
   <footer class="bottom-panel">
     <p>Need more help? <a href="contact.html">Contact Us!</a></p>
   </footer>
+
+  <!-- Modals using :target -->
+  <div id="profileModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h3>Edit Profile</h3>
+      <label>Name</label>
+      <input type="text" value="Roberto Pablo Jr.">
+      <label>Email</label>
+      <input type="email" value="lr.rpablo@mmdc.mcl.edu.ph">
+      <label>Phone</label>
+      <input type="tel" value="+63 123 456 7890">
+      <div class="modal-actions">
+        <a href="#" class="btn">Cancel</a>
+        <a href="#" class="btn">Save</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="passwordModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h3>Change Password</h3>
+      <label>Current Password</label>
+      <input type="password">
+      <label>New Password</label>
+      <input type="password">
+      <label>Confirm New Password</label>
+      <input type="password">
+      <div class="modal-actions">
+        <a href="#" class="btn">Cancel</a>
+        <a href="#" class="btn">Update</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="twoFAModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h3>Enable 2FA</h3>
+      <p>Two-Factor Authentication setup will be available soon.</p>
+      <div class="modal-actions">
+        <a href="#" class="btn">Close</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="notificationsModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h3>Notification Settings</h3>
+      <label><input type="checkbox" checked> Email Notifications</label>
+      <label><input type="checkbox"> SMS Notifications</label>
+      <label><input type="checkbox" checked> Security Alerts</label>
+      <div class="modal-actions">
+        <a href="#" class="btn">Cancel</a>
+        <a href="#" class="btn">Save</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="privacyModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h3>Privacy Settings</h3>
+      <label><input type="checkbox" checked> Show my profile to others</label>
+      <label><input type="checkbox"> Allow friend requests</label>
+      <label><input type="checkbox" checked> Share activity status</label>
+      <div class="modal-actions">
+        <a href="#" class="btn">Cancel</a>
+        <a href="#" class="btn">Save</a>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
