@@ -1,6 +1,6 @@
 # Cyberware – Be Aware!  
 
-**Cyberware** is a responsive website built with **HTML & CSS only**, focused on cybersecurity awareness and guidance. The site aims to provide users with practical tips, educational content, and interactive tools to stay safe online.
+**Cyberware** is a responsive website built with **HTML & CSS only** for MS1, focused on cybersecurity awareness and guidance. The site aims to provide users with practical tips, educational content, and interactive tools to stay safe online.
 
 ---
 
