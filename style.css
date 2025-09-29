@@ -625,9 +625,10 @@ a {
 
 /* ---------- Back Button ---------- */
 .unhackable-header .back-btn {
-  position: absolute;
-  top: 10px;
+  position: fixed;   
+  top: 20px;
   left: 10px;
+  z-index: 1000;
 
   display: inline-flex;
   align-items: center;
@@ -701,7 +702,6 @@ a {
   margin-bottom: 22px;
   line-height: 1.6;
 }
-
 /* ---------- Loading Bar ---------- */
 .loading-bar {
   width: 260px;
@@ -1270,7 +1270,8 @@ a {
 
 .protection-tips header h2 {
   text-align: center;
-  color: #ffffff;/* === Number Game Page Styles === */
+  color: #ffffff;
+/* === Number Game Page Styles === */
 
 /* Main container */
 .number-game-container {
