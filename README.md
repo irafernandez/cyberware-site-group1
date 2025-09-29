@@ -32,11 +32,11 @@ Improvements:
 
 ## 📂 Project Resources
 
-- [Project Requirements Document](#)  
-- [Project Wireframe](#)  
-- [Updated Project Plan](#)  
-- [GitHub Pages – Live Site](#)  
-
+- [Project Requirements Document](https://docs.google.com/document/d/1b5YzSub_7prcHJglPcaWfGlTA-dnl21rVAI7yqoyYZI/edit?tab=t.0#heading=h.c5rb2h1vy80b)  
+- [Project Wireframe](https://app.moqups.com/l6F9mHaOxIySCm5dO2sxKgt2JHFgCfaM/view/page/aa4c7dde7)  
+- [Updated Project Plan](https://docs.google.com/spreadsheets/d/1qsOMo-69kGqXebhjhPJhy-dsE7AL5YhDMsydsLwKsy8/edit?gid=2069078818#gid=2069078818)  
+- [GitHub Pages – Live Site](https://github.com/irafernandez/cyberware-site-group1.git)  
+- [Google Slides]([https://github.com/irafernandez/cyberware-site-group1.git](https://docs.google.com/presentation/d/17qNFdhBjdxMp4kymVADnWPAHBq8zZ6l0z9hDDrePQ80/edit?slide=id.g348a1341a9f_0_886#slide=id.g348a1341a9f_0_886))  
 ---
 
 ## 💻 How to Use
