@@ -45,6 +45,7 @@
         <fieldset>
           <legend class="visually-hidden">Enter your inquiry details</legend>
 
+          <div class="input-row">
           <!-- Name -->
           <div class="input-group">
             <label for="name-input" class="input-label">Your Name</label>
@@ -56,6 +57,9 @@
             <label for="email-input" class="input-label">Email Address</label>
             <input type="email" id="email-input" name="email" placeholder="you@example.com" required aria-required="true" autocomplete="email">
           </div>
+        </div>
+
+         <div class="subject-category-row">
 
           <!-- Subject -->
           <div class="input-group">
@@ -75,6 +79,7 @@
               <option value="other">Other</option>
             </select>
           </div>
+        </div>
 
           <!-- Message -->
           <div class="input-group">
@@ -82,6 +87,7 @@
             <textarea id="message-input" name="message" rows="6" placeholder="Describe your issue or question..." required aria-required="true"></textarea>
           </div>
 
+          
           <!-- Submit -->
           <button type="submit" class="submit-btn">
             <i class="fas fa-paper-plane" aria-hidden="true"></i>
