@@ -792,8 +792,10 @@ a {
 .page-header {
   text-align: center;
   margin-bottom: 40px;
+  border-radius: 20px;    
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+  padding: 32px 20px;  
 }
-
 .page-icon {
   font-size: 4rem;
   color: #6D94C5;
@@ -843,7 +845,7 @@ a {
 }
 
 .tip-item header h3 i {
-  color: #28a745;
+  color: #ffffff;
   font-size: 1.2em;
 }
 
@@ -883,6 +885,7 @@ a {
   .result-card {
     padding: 25px 20px;
   }
+
 
   .warning-grid,
   .tips-grid {
@@ -1006,13 +1009,28 @@ a {
 
 /* Phone verification section */
 .phone-verification {
-  margin-bottom: 40px;
+  border-radius: 20px;
 }
+
+.phone-verification header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;     
+  min-height: 100px;       
+  border-radius: 16px;        
+  background: #6D94C5;        
+  color: #fff;                
+  padding: 18px 24px;          
+  margin-bottom: 20px;        
+  text-align: center;          
+}     
+
 
 .phone-verification header h2 {
   text-align: center;
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 1000;
   color: #ffffff;
   margin-bottom: 30px;
 }
@@ -1040,6 +1058,9 @@ a {
 
 .input-group {
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
 .input-label {
@@ -1059,6 +1080,11 @@ a {
   font-size: 1rem;
   outline: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-label,
+.phone-input {
+  text-align: center;  /* Center text inside label and input */
 }
 
 .phone-input:focus {
@@ -1213,12 +1239,38 @@ a {
   margin: 40px 0;
 }
 
+.warning-signs .warning-header {
+  border-radius: 16px;      
+  background: #e8bb33;      
+  color: #fff;             
+  padding: 18px 24px;       
+  margin-bottom: 24px;      
+  text-align: center;       
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+}
+
+.warning-signs-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  min-height: 60px;       
+  border-radius: 16px;        
+  background: #e8bb33;        
+  color: #fff;                
+  padding: 18px 24px;          
+  margin-bottom: 20px;        
+  text-align: center;  
+  justify-content: center;       
+}
+
+
 .warning-signs header h2 {
   text-align: center;
-  color: #ff0000;
+  color: #ffffff;
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 800;
+  margin-top: 18px;
 }
 
 .warning-grid {
@@ -1240,15 +1292,17 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 15px;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .warning-card header h3 i {
-  color: #ffc107;
-  font-size: 1.2em;
+  color: #ffffff;
+  font-size: 2.2em;
 }
 
 .warning-content p {
@@ -1264,6 +1318,19 @@ a {
 }
 
 /* Protection tips section */
+
+.protection-header {
+  border-radius: 16px;      
+  background: #28a745;      
+  color: #fff;             
+  padding: 18px 24px;       
+  margin-bottom: 24px;      
+  text-align: center;       
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+}
+
+
+
 .protection-tips {
   margin: 40px 0;
 }
@@ -1389,11 +1456,6 @@ a {
   transform: translateY(-2px);
 }
 
-.check-btn:focus {
-  outline: 2px solid #4A6FA5;
-  outline-offset: 2px;
-}
-
 /* Result container matching button-card style */
 .result-container {
   margin-top: 30px;
@@ -1450,12 +1512,12 @@ a {
   margin: 0;
 }
 
-/* Security tips section */
-.security-tips {
+/* Tips section using the same grid layout as main page */
+.tips-section {
   margin-top: 30px;
 }
 
-.security-tips header h2 {
+.tips-section h3 {
   text-align: center;
   color: #111;
   margin-bottom: 30px;
@@ -1487,19 +1549,14 @@ a {
   transform: translateY(-2px);
 }
 
-.tip-card:focus {
-  outline: 2px solid #6D94C5;
-  outline-offset: 2px;
-}
-
-.tip-card header i {
+.tip-card i {
   display: block;
   font-size: 2em;
   margin: 0 auto 8px;
   color: #111;
 }
 
-.tip-card header h3 {
+.tip-card h4 {
   font-size: 18px;
   font-weight: 800;
   margin-bottom: 10px;
@@ -1520,7 +1577,7 @@ a {
   transform: rotate(180deg);
 }
 
-.tip-card header p {
+.tip-card p {
   font-size: 12px;
   color: #444;
   line-height: 1.4;
@@ -1600,6 +1657,7 @@ a {
   text-decoration: none;
   z-index: 1000;
   border-radius: 4px;
+  font-weight: bold;
 }
 
 .skip-link:focus {
@@ -1635,11 +1693,11 @@ a {
     font-size: 22px;
   }
 
-  .tip-card header h3 {
+  .tip-card h4 {
     font-size: 16px;
   }
 
-  .tip-card header p {
+  .tip-card p {
     font-size: 11px;
   }
 
@@ -1916,6 +1974,13 @@ a {
   border-top: 2px solid #6D94C5;
 }
 
+.tip-detail h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 15px;
+}
+
 .tip-detail h5 {
   font-size: 14px;
   font-weight: 700;
@@ -1965,7 +2030,7 @@ a {
     padding: 30px 20px;
   }
 
-  .number-game-header .back-btn {
+  .number-game-header nav {
     position: static;
     margin-bottom: 20px;
   }
@@ -1976,7 +2041,7 @@ a {
 }
 
 @media (max-width: 480px) {
-  .number-game-header h2 {
+  .number-game-header h1 {
     font-size: 22px;
   }
 
@@ -2017,6 +2082,13 @@ a {
 .page-header {
   text-align: center;
   margin-bottom: 2.5rem;
+  background-color: #6D94C5;
+}
+
+.page-header h1 {
+  font-size: 2.8em; 
+  font-weight: 800;
+  margin: 0 0 12px 0;
 }
 
 .page-header h2 {
@@ -2028,13 +2100,13 @@ a {
 
 .page-header .page-icon {
   font-size: 3.2rem;
-  color: #4CAF50;
+  color: #ffffff;
   margin-bottom: 0.5rem;
   animation: bounceIcon 2s infinite;
 }
 
 .page-description {
-  color: #555;
+  color: #ffffff;
   font-size: 1rem;
   max-width: 600px;
   margin: 0.5rem auto 1.5rem;
@@ -2805,3 +2877,4 @@ textarea {
   font-size: 15px;
   line-height: 1.5;
 }
+
