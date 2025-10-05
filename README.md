@@ -37,7 +37,8 @@ Improvements:
 - [Project Wireframe](https://app.moqups.com/l6F9mHaOxIySCm5dO2sxKgt2JHFgCfaM/view/page/aa4c7dde7)  
 - [Updated Project Plan](https://docs.google.com/spreadsheets/d/1qsOMo-69kGqXebhjhPJhy-dsE7AL5YhDMsydsLwKsy8/edit?gid=2069078818#gid=2069078818)  
 - [GitHub Pages – Live Site](https://github.com/irafernandez/cyberware-site-group1.git)  
-- [Google Slides](https://docs.google.com/presentation/d/17qNFdhBjdxMp4kymVADnWPAHBq8zZ6l0z9hDDrePQ80/edit?slide=id.g348a1341a9f_0_886#slide=id.g348a1341a9f_0_886)  
+- [Google Slides](https://docs.google.com/presentation/d/17qNFdhBjdxMp4kymVADnWPAHBq8zZ6l0z9hDDrePQ80/edit?slide=id.g348a1341a9f_0_886#slide=id.g348a1341a9f_0_886)
+- [Github Page Link](https://irafernandez.github.io/cyberware-site-group1/index.html)  
 ---
 
 ## 💻 How to Use
