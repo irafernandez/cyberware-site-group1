@@ -28,16 +28,24 @@
 
   <main>
 
-    <section class="top-panel" role="search">
-      <h2>How can we help you?</h2>
-      <label for="search" class="visually-hidden">Search Help Topics</label>
-      <input 
-        type="search" 
-        id="search" 
-        class="search-bar" 
-        placeholder="Search..." 
-        aria-label="Search Help Topics">
-    </section>
+  <section class="top-panel" role="search">
+    <h2>How can we help you?</h2>
+
+    <label for="search" class="visually-hidden">Search Help Topics</label>
+    <input 
+      type="search" 
+      id="search" 
+      class="search-bar" 
+      placeholder="Search..." 
+      aria-label="Search Help Topics">
+
+    <!-- No Results Message -->
+    <p 
+      id="noResults" 
+      style="display:none; color:#fff; margin-top:15px; font-weight:600;">
+      No results found.
+    </p>
+  </section>
 
     <!-- Help Topics -->
     <section class="buttons" aria-label="Help Topics">
@@ -99,6 +107,6 @@
       <a href="contact.html">Contact Us!</a>
     </p>
   </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
