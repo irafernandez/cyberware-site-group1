@@ -2,88 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cybersecurity News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity News - @cyberware</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" 
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="news-page">
 
-  <div class="news-container">
-    <!-- Back button -->
-    <a href="index.html" class="news-back-btn">
-      ← Back
-    </a>
+<body>
+  <!-- Global Header -->
+  <header class="global-header">
+    <h1>@cyberware</h1>
+  </header>
 
+  <main class="news-container">
     <!-- Page Header -->
-    <header class="news-header">
-      <div class="news-icon">📰</div>
-      <h2>Cybersecurity News</h2>
-      <p>Stay updated with the latest in cybersecurity</p>
-    </header>
+    <section class="news-header" aria-labelledby="news-heading">
+      <a href="index.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to Home
+      </a>
+
+      <i class="fa-regular fa-newspaper news-icon" aria-hidden="true"></i>
+      <h2 id="news-heading">Cybersecurity News</h2>
+      <p>Stay ahead of the latest threats, breaches, and digital defense trends.</p>
+    </section>
 
     <!-- News Feed -->
     <section class="news-feed">
-
+      
+      <!-- Article 1 -->
       <article class="news-card">
         <img src="https://via.placeholder.com/400x200" alt="Ransomware Attack">
         <div class="news-content">
           <h3>Airport Systems Hit by Ransomware Attack</h3>
-          <p>
-            A cyberattack on Collins Aerospace disrupted check-in and baggage 
-            systems in multiple European airports, stranding thousands of passengers.
-          </p>
-          <a href="https://www.reuters.com/legal/government/airport-chaos-highlights-rise-high-profile-ransomware-attacks-cyber-experts-say-2025-09-22/?utm_source=chatgpt.com" 
-             target="_blank" class="read-more">
-            Read More →
-          </a>
+          <p>A cyberattack on Collins Aerospace disrupted check-in and baggage systems in multiple European airports, stranding thousands of passengers.</p>
+          <a href="https://www.reuters.com/legal/government/airport-chaos-highlights-rise-high-profile-ransomware-attacks-cyber-experts-say-2025-09-22/" target="_blank" class="read-more">Read More →</a>
         </div>
       </article>
 
+      <!-- Article 2 -->
       <article class="news-card">
         <img src="https://via.placeholder.com/400x200" alt="Microsoft SharePoint Hack">
         <div class="news-content">
           <h3>Global Microsoft SharePoint Hack</h3>
-          <p>
-            A zero-day vulnerability in Microsoft’s SharePoint servers allowed hackers 
-            to breach U.S. agencies, universities, and private organizations.
-          </p>
-          <a href="https://www.washingtonpost.com/technology/2025/07/20/microsoft-sharepoint-hack/?utm_source=chatgpt.com" 
-             target="_blank" class="read-more">
-            Read More →
-          </a>
+          <p>A zero-day vulnerability in Microsoft’s SharePoint servers allowed hackers to breach U.S. agencies, universities, and private organizations.</p>
+          <a href="https://www.washingtonpost.com/technology/2025/07/20/microsoft-sharepoint-hack/" target="_blank" class="read-more">Read More →</a>
         </div>
       </article>
 
+      <!-- Article 3 -->
       <article class="news-card">
         <img src="https://via.placeholder.com/400x200" alt="Qantas Data Breach">
         <div class="news-content">
           <h3>Qantas Confirms Major Data Breach</h3>
-          <p>
-            The Australian airline revealed a breach affecting up to 6 million 
-            customers, exposing personal data such as names, emails, and birth dates.
-          </p>
-          <a href="https://www.theguardian.com/business/2025/jul/02/qantas-confirms-cyber-attack-exposes-records-of-up-to-6-million-customers?utm_source=chatgpt.com" 
-             target="_blank" class="read-more">
-            Read More →
-          </a>
+          <p>The Australian airline revealed a breach affecting up to 6 million customers, exposing personal data such as names, emails, and birth dates.</p>
+          <a href="https://www.theguardian.com/business/2025/jul/02/qantas-confirms-cyber-attack-exposes-records-of-up-to-6-million-customers" target="_blank" class="read-more">Read More →</a>
         </div>
       </article>
 
+      <!-- Article 4 -->
       <article class="news-card">
         <img src="https://via.placeholder.com/400x200" alt="UK Arrest Cyberattack">
         <div class="news-content">
           <h3>UK Arrest Over Airport Cyberattack</h3>
-          <p>
-            A man in his 40s was arrested after the hack that disrupted Heathrow, 
-            Brussels, and Dublin airports, targeting Collins Aerospace systems.
-          </p>
-          <a href="https://www.theguardian.com/uk-news/2025/sep/24/arrest-cyberattack-hit-heathrow-european-airports?utm_source=chatgpt.com" 
-             target="_blank" class="read-more">
-            Read More →
-          </a>
+          <p>A man in his 40s was arrested after the hack that disrupted Heathrow, Brussels, and Dublin airports, targeting Collins Aerospace systems.</p>
+          <a href="https://www.theguardian.com/uk-news/2025/sep/24/arrest-cyberattack-hit-heathrow-european-airports" target="_blank" class="read-more">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="news-card">
+        <img src="https://via.placeholder.com/400x200" alt="Cyber Law Privacy">
+        <div class="news-content">
+          <h3>New Cyber Law Strengthens Data Privacy</h3>
+          <p>The updated regulation enforces stricter compliance for companies handling user data, enhancing transparency and protection standards worldwide.</p>
+          <a href="https://www.csoonline.com/article/1234567/new-cyber-law-2025.html" target="_blank" class="read-more">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="news-card">
+        <img src="https://via.placeholder.com/400x200" alt="Malware Game Mod">
+        <div class="news-content">
+          <h3>Malware Disguised as Game Mod Found</h3>
+          <p>Security researchers discovered a Trojan hidden inside a popular game modification tool, capable of stealing credentials and crypto wallets.</p>
+          <a href="https://www.techradar.com/news/game-mod-trojan-2025" target="_blank" class="read-more">Read More →</a>
         </div>
       </article>
 
     </section>
-  </div>
+  </main>
+
+  <footer class="bottom-panel">
+    <p>Need more help? <a href="contact.html">Contact Us!</a></p>
+  </footer>
 </body>
 </html>

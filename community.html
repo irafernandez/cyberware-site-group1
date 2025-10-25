@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cyberware Help - Community</title>
 
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link 
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" 
     rel="stylesheet">
 
-  <!-- Font Awesome  -->
+  <!-- Font Awesome -->
   <link 
     rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
@@ -23,16 +24,20 @@
 </head>
 <body>
 
-  <header>
+  <header role="banner">
     <h1>@cyberware</h1>
   </header>
 
-  <div class="community-container">
-
-    <!-- Back Button -->
+  <section class="community-header" aria-labelledby="unhackable-heading">
     <a href="index.html" class="back-btn">
-      <i class="fa-solid fa-arrow-left"></i> Back to Home
+      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to Home
     </a>
+
+    <h2 id="community-heading">Community</h2>
+    <p>Join the conversation, share tips, and stay cyber-aware!</p>
+  </section>
+
+  <div class="community-container">
 
     <!-- Left Sidebar -->
     <aside class="sidebar">
